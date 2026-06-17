@@ -1,6 +1,4 @@
-
-# Build the website in parts to avoid truncation
-part1 = '''<!DOCTYPE html>
+ '''<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -1338,12 +1336,6 @@ part1 = '''<!DOCTYPE html>
         <button class="mobile-menu-btn">☰</button>
     </nav>
 '''
-
-with open('/mnt/agents/output/imperio_imports_website.html', 'w', encoding='utf-8') as f:
-    f.write(part1)
-
-print(f"Part 1 written: {len(part1)} chars")
-part2 = '''
     <!-- ================= HERO ================= -->
     <section class="hero" id="home">
         <div class="hero-bg"></div>
@@ -1795,8 +1787,7 @@ part2 = '''
 with open('/mnt/agents/output/imperio_imports_website.html', 'a', encoding='utf-8') as f:
     f.write(part2)
 
-print(f"Part 2 written: {len(part2)} chars")
-part3 = '''
+ '''
     <script>
         // ================= PRODUCT DATA =================
         let products = [
@@ -2035,8 +2026,3 @@ part3 = '''
 </html>
 '''
 
-with open('/mnt/agents/output/imperio_imports_website.html', 'a', encoding='utf-8') as f:
-    f.write(part3)
-
-print(f"Part 3 written: {len(part3)} chars")
-print("Website complete!")
